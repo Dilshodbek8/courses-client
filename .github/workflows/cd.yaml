@@ -17,5 +17,7 @@ jobs:
           script: |
             cd ~/courses-client/
             git pull origin main
+            npm install -f
+            npm run build
             pm2 kill
             pm2 start
